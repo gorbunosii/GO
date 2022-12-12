@@ -1,0 +1,222 @@
+.container-portfolio {
+    padding: 50px 130px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.portfolio__title {
+    text-align: center;
+    white-space: pre-line;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.portfolio-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.portfolio-text {
+    display: flex;
+    align-items: end;
+    white-space: pre-line;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.portfolio-photo-VR {
+    background-image: url("../image/VR.png");
+    background-size: cover;
+    max-width: 100%;
+    min-height: 228px;
+    padding: 31px 40px;
+}
+
+.portfolio-photo-audio {
+    background-image: url("../image/AUDIO.png");
+    background-size: cover;
+    max-width: 100%;
+    min-height: 228px;
+    padding: 5px 40px;
+    margin-top: 70px;
+}
+
+.portfolio-photo-karaoke {
+    background-image: url("../image/KARAOKE.png");
+    background-size: cover;
+    max-width: 100%;
+    min-height: 228px;
+    padding: 32px 40px;
+}
+
+.portfolio-photo-board {
+    background-image: url("../image/BOARD-GAME.png");
+    background-size: cover;
+    max-width: 100%;
+    min-height: 228px;
+    padding: 32px 40px;
+    margin-top: -70px;
+}
+
+.portfolio-photo-movie {
+    background-image: url("../image/MOVIE.png");
+    background-size: cover;
+    max-width: 100%;
+    min-height: 228px;
+    padding: 6px 40px;
+}
+
+.portfolio-photo-playstation {
+    background-image: url("../image/PlayStation.png");
+    background-size: cover;
+    max-width: 100%;
+    min-height: 228px;
+    padding: 32px 40px;
+    margin-top: -70px;
+}
+
+.portfolio-photo-VR:hover, .portfolio-photo-audio:hover, .portfolio-photo-karaoke:hover, .portfolio-photo-board:hover, .portfolio-photo-movie:hover, .portfolio-photo-playstation:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+@media (max-width: 1300px) {
+    .container-portfolio {
+        padding: 20px 60px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .portfolio__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .portfolio-photo {
+        display: grid;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .portfolio-photo-VR {
+        min-height: 172px;
+        padding: 15px 20px;
+    }
+
+    .portfolio-photo-audio {
+        min-height: 172px;
+        padding: 5px 20px;
+        margin-top: 70px;
+    }
+
+    .portfolio-photo-karaoke {
+        min-height: 172px;
+        padding: 15px 20px;
+    }
+
+    .portfolio-photo-board {
+        min-height: 172px;
+        padding: 15px 20px;
+        margin-top: -70px;
+    }
+
+    .portfolio-photo-movie {
+        min-height: 172px;
+        padding: 6px 20px;
+    }
+
+    .portfolio-photo-playstation {
+        min-height: 172px;
+        padding: 15px 20px;
+        margin-top: -70px;
+    }
+}
+
+@media (max-width: 910px) {
+    .container-portfolio {
+        padding: 20px 40px 0;
+    }
+    .portfolio-photo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 20px;
+        margin-bottom: 60px;
+    }
+    .portfolio-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .portfolio-photo-VR {
+        min-height: 228px;
+    }
+    .portfolio-photo-audio {
+        min-height: 228px;
+        margin-top: 0;
+    }
+    .portfolio-photo-board {
+        min-height: 228px;
+        margin-top: 0;
+    }
+    .portfolio-photo-movie {
+        min-height: 228px;
+    }
+    .portfolio-photo-playstation {
+        min-height: 228px;
+        margin-top: 0;
+    }
+    .portfolio-photo-karaoke {
+        min-height: 228px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-portfolio {
+        padding: 20px 20px 0;
+    }
+    .portfolio-photo {
+        grid-template-columns: repeat(2, 135px);
+        grid-template-rows: repeat(3, 75px);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .portfolio__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    .portfolio-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .portfolio-photo-VR {
+        width: 135px;
+        min-height: 75px;
+    }
+    .portfolio-photo-audio {
+        width: 135px;
+        min-height: 75px;
+    }
+    .portfolio-photo-board {
+        width: 135px;
+        min-height: 75px;
+    }
+    .portfolio-photo-movie {
+        width: 135px;
+        min-height: 75px;
+    }
+    .portfolio-photo-playstation {
+        width: 135px;
+        min-height: 75px;
+    }
+    .portfolio-photo-karaoke {
+        width: 135px;
+        min-height: 75px;
+    }
+}

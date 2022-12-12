@@ -1,0 +1,343 @@
+.take {
+    background-color: var(--440F51);
+}
+
+.container-take {
+    max-width: 1440px;
+    padding: 86px 130px 79px;
+    margin: 0 auto;
+}
+
+.take__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.take__title {
+    margin-bottom: 44px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.take-halls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
+}
+
+.take-halls-button {
+    display: none;
+}
+
+.take-halls-label {
+    white-space: nowrap;
+    width: 250px;
+    height: 55px;
+    padding: 7px 15px 8px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--ffffff);
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+}
+
+.take-gather {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.take-gather-group {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 13px;
+    margin-bottom: 56px;
+}
+
+.take-gather-console, .take-gather-board-game, .take-gather-more {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.take-gather-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+
+.take-gather-input {
+    display: none;
+}
+
+.take-gather-label {
+    display: block;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.take-gather-label:before {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.take-gather-label-cube:before {
+    border-radius: 0;
+}
+
+.take-gather-input:checked + label::before {
+    content: '';
+    outline: 1px solid var(--CD06FF);
+    outline-offset: 3px;
+    transition-duration: 0.5s;
+}
+
+.take-choice {
+    display: grid;
+    grid-template-columns: 300px 280px 300px;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-evenly;
+    row-gap: 11px;
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+
+.cell {
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    row-gap: 6px;
+    column-gap: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.cell-time {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.none {
+    display: none;
+}
+
+.take-choice-time {
+    margin-top: 21px;
+    padding: 12px 20px;
+    width: 134px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.take-choice-people {
+    margin-top: 16px;
+    padding: 12px 20px;
+}
+
+.take-choice-name, .take-choice-telephone, .take-choice-people, .take-choice-surname, .take-choice-mail {
+    height: 52px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.take-form-submit {
+    color: var(--6C0287);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    background: var(--ffffff);
+    border-radius: 10px;
+    padding: 16px 50px;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px 1px white;
+    border: none;
+}
+
+.take-choice-accept {
+    display: flex;
+    justify-content: end;
+    padding: 0 100px;
+}
+
+.take-halls-label:hover {
+    background: var(--EADEED);
+    border: 3px solid var(--640AA3);
+    transition-duration: 0.2s;
+}
+
+.take-halls-label:focus {
+    background: var(--ffffff);
+    border: 3px solid var(--640AA3);
+}
+
+.take-halls-label:active {
+    color: var(--ffffff);
+    background: var(--6C0287);
+    border: 3px solid white;
+    transition-duration: 0.2s;
+}
+
+
+.take-gather-button:checked + .take-halls-label {
+    border: 3px solid var(--640AA3);
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+.take-choice-name:focus, .take-choice-telephone:focus, .take-choice-surname:focus, .take-choice-mail:focus, .take-choice-submit:focus {
+    border: 2px solid var(--CD06FF);
+}
+
+@media (max-width: 1300px) {
+    .container-take {
+        padding: 50px 60px 59px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .take__subtitle {
+        margin-bottom: 26px;
+    }
+    .take__title {
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .take-halls {
+        margin-bottom: 41px;
+    }
+    .take-halls-label {
+        width: 180px;
+        height: 44px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .take-gather {
+        margin-bottom: 26px;
+    }
+    .take-gather-group {
+        margin-bottom: 30px;
+    }
+    .take-choice {
+        display: grid;
+        grid-template-columns: 280px 251px 280px;
+        column-gap: 50px;
+    }
+    .take-choice-accept {
+        padding: 0 38px;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .take-gather-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+    .container-take {
+        padding: 50px 40px 59px;
+    }
+    .take-choice {
+        display: grid;
+        grid-template-columns: 280px 300px;
+        grid-template-rows: 110px 74px 74px;
+        justify-content: space-between;
+    }
+    .take-choice-accept {
+        padding: 0 38px;
+    }
+    .cell-people {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .take-choice-accept {
+        padding: 0 47px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-take {
+        padding: 20px 20px 20px;
+    }
+    .take__subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .take__title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .take-halls {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(90px , 130px));
+        row-gap: 14px;
+        column-gap: 24px;
+        margin-bottom: 30px;
+        place-items: center;
+        justify-content: center;
+    }
+    .take-gather-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .container-take {
+        padding: 50px 20px 59px;
+    }
+    .take-choice {
+        display: grid;
+        grid-template-columns: 280px;
+        padding: 0;
+        justify-content: center;
+    }
+    .cell-people {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .take-choice-accept {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .take-form-submit {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 17px 59px;
+    }
+    .take-halls-label {
+        width: 130px;
+        height: 30px;
+        padding: 6px 15px 6px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

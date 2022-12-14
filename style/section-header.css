@@ -26,6 +26,12 @@
     align-self: center;
 }
 
+.header__item:hover {
+    scale: 1.1;
+    transition-duration: 0.5s;
+    text-shadow: var(--6C0287) 1px 0 10px;
+}
+
 .header__button {
     height: 55px;
     font-weight: 700;

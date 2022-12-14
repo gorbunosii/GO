@@ -101,7 +101,7 @@
 }
 
 .contacts-map {
-    background-image: url("/image/map.png");
+    background-image: url("../image/map.png");
     background-size: cover;
     width: 100%;
     min-height: 274px;

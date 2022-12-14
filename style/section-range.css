@@ -1,7 +1,11 @@
 .container-range {
-    padding: 46px 130px 50px;
+    padding: 0 130px 0;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.range {
+    padding: 46px 0 133px;
 }
 
 .range-name {
@@ -29,7 +33,7 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 50px;
-    margin-left: 100px;
+    padding-left: 100px;
     margin-bottom: 30px;
 }
 
@@ -38,7 +42,7 @@
     grid-template-columns: repeat(2,200px);
     grid-template-rows: 141px 68px;
     column-gap: 16px;
-    margin-bottom: 150px;
+    margin-bottom: 175px;
 }
 
 .range-choice-number {
@@ -46,7 +50,7 @@
     font-weight: 900;
     font-size: 100px;
     line-height: 141px;
-    color: #CD06FF;
+    color: var(--CD06FF);
 }
 
 .range-choice-new {
@@ -56,7 +60,7 @@
     font-weight: 900;
     font-size: 64px;
     padding-bottom: 9px;
-    color: #CD06FF;
+    color: var(--CD06FF);
 }
 
 .range-choice-hall {
@@ -74,12 +78,12 @@
 }
 
 .range__button {
-    color: #FFFFFF;
+    color: var(--ffffff);
     padding: 25px 69px;
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
-    background: #6C0287;
+    background: var(--6C0287);
     border-radius: 10px;
     box-shadow: 0 0 15px 1px var(--6C0287);
     border: none;
@@ -94,8 +98,7 @@
     border: 1px solid white;
     border-radius: 50%;
     position: relative;
-    top: -33px;
-    margin-bottom: 58px;
+    top: -8px;
 }
 
 .range-down {
@@ -137,7 +140,10 @@
 
 @media (max-width: 1300px) {
     .container-range {
-        padding: 35px 60px 35px;
+        padding: 0 60px 0;
+    }
+    .range {
+        padding: 35px 0 154px;
     }
 }
 
@@ -222,7 +228,7 @@
         display: none;
     }
     .container-range {
-        padding: 35px 40px 35px;
+        padding: 0 40px 0;
     }
 }
 
@@ -232,6 +238,9 @@
         height: 179px;
         right: 83px;
         top: 17px;
+    }
+    .range {
+        padding: 35px 0 30px;
     }
     .range-name {
         font-size: 35px;
@@ -271,6 +280,6 @@
         margin-bottom: 30px;
     }
     .container-range {
-        padding: 35px 20px 35px;
+        padding: 0 20px 0;
     }
 }

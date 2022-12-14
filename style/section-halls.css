@@ -1,7 +1,11 @@
 .container-halls {
-    padding: 32px 130px 100px;
+    padding: 0 130px 0;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.halls {
+    padding: 32px 0 100px;
 }
 
 .halls__title {
@@ -61,7 +65,10 @@
 
 @media (max-width: 1300px) {
     .container-halls {
-        padding: 20px 60px 70px;
+        padding: 0 60px 0;
+    }
+    .halls {
+        padding: 20px 0 70px;
     }
 }
 
@@ -95,7 +102,10 @@
         line-height: 50px;
     }
     .container-halls {
-        padding: 20px 20px 40px;
+        padding: 0 20px 0;
+    }
+    .halls {
+        padding: 20px 0 40px;
     }
 }
 
@@ -103,9 +113,6 @@
     .halls__items {
         font-size: 26px;
         line-height: 34px;
-    }
-    .container-halls {
-        padding: 20px 20px 40px;
     }
     .halls__title {
         font-size: 14px;

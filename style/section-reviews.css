@@ -6,6 +6,10 @@
     margin-bottom: 46px;
 }
 
+.reviews {
+    padding: 50px 0;
+}
+
 .reviews-list {
     display: flex;
     flex-direction: column;
@@ -59,7 +63,10 @@
 
 @media (max-width: 1300px) {
     .container {
-        padding: 40px 60px;
+        padding: 0 60px;
+    }
+    .reviews {
+        padding: 40px 0;
     }
 }
 
@@ -88,13 +95,16 @@
 
 @media (max-width: 910px) {
     .container {
-        padding: 40px 40px;
+        padding: 0 40px;
     }
 }
 
 @media (max-width: 600px) {
     .container {
-        padding: 10px 20px;
+        padding: 0 20px;
+    }
+    .reviews {
+        padding: 10px 0;
     }
     .reviews-title {
         font-size: 14px;

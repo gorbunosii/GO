@@ -1,0 +1,66 @@
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.overlay-menu.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.list-hidden {
+    position: absolute;
+    width: 100%;
+    padding: 50px 0;
+    background: #1B1A1B;
+    transition-property: top, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+.item-hidden-btn {
+    display: none;
+    text-align: center;
+}
+
+.hidden__button {
+    width: 184px;
+    height: 37px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: transparent;
+    border: 3px solid var(--CD06FF);
+    border-radius: 10px;
+    color: var(--ffffff);
+}
+
+.item-hidden {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 50px;
+    align-self: center;
+    color: white;
+}
+
+.item-hidden:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .item-hidden-btn {
+        display: block;
+    }
+}

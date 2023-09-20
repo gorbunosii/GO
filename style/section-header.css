@@ -9,7 +9,20 @@
 }
 
 .header-menu {
+    background-image: url("../image/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 29px;
     display: none;
+}
+
+.header-menu.close-menu {
+    background-image: url("../image/close-menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
 }
 
 .header {

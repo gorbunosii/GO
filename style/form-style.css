@@ -1,0 +1,134 @@
+.overlay-form {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.questionnaire-form {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 600px;
+    height: 498px;
+    background: #440F51;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    padding: 70px 106px;
+    transition-property: top, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+.overlay-form.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.close-form {
+    background: inherit;
+    border: none;
+    position: absolute;
+    top: 20px ;
+    right: 30px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../image/closeForm.png");
+}
+
+.close-form:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.title-form {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.specifications-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cell-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.label-form {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.input-form {
+    background: #F4F2FF;
+    width: 280px;
+    height: 52px;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+}
+
+.accept-form {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+    width: 280px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .questionnaire-form {
+        width: 280px;
+        height: 498px;
+        padding: 70px 6px;
+    }
+
+    .close-form {
+        width: 30px;
+        height: 30px;
+    }
+    .input-form {
+        width: 220px;
+        height: 52px;
+    }
+    
+    .accept-form {
+        width: 220px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 5px 5px;
+    }
+}

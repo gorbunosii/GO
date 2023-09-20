@@ -13,11 +13,11 @@
 .questions-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 87px);
+    grid-template-rows: repeat(5, 1fr);
     row-gap: 20px;
 }
 
-.questions-item {
+.questions-items {
     display: flex;
     justify-content: space-between;
     padding: 20px 70px;
@@ -26,10 +26,12 @@
 .questions-item:nth-child(odd) {
     background-color: white;
     color: var(--1C1A1A);
+    margin-bottom: 20px;
 }
 
 .questions-item:nth-child(even) {
     background-color: var(--440F51);
+    margin-bottom: 20px;
 }
 
 .questions-text {
@@ -80,6 +82,25 @@
     transition-duration: 0.5s;
     outline: none;
 }
+
+.item__text-wrapper {
+    background-color: white;
+    color: black;
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease-in-out;
+}
+
+.item__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 70px 70px;
+  }
+
+  .item_active .item__text-wrapper {
+    height: auto;
+  }
 
 @media (max-width: 1200px) {
     .questions-item:last-child {

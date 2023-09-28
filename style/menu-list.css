@@ -8,14 +8,8 @@
     right: 0;
     top: 110px;
     transition: 0.3s ease-in-out;
-    visibility: hidden;
     width: 100%;
     z-index: 1;
-}
-
-.overlay-menu.is-visible {
-    visibility: visible;
-    opacity: 1;
 }
 
 .list-hidden {
@@ -23,9 +17,6 @@
     width: 100%;
     padding: 50px 0;
     background: #1B1A1B;
-    transition-property: top, opacity;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
     z-index: 2;
 }
 

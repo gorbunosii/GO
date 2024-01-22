@@ -17,7 +17,7 @@
     margin-bottom: 40px;
 }
 
-.halls__list {
+/* .halls__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -61,7 +61,9 @@
     font-size: 70px;
     line-height: 80px;
     text-transform: uppercase;
-}
+} */
+
+
 
 @media (max-width: 1300px) {
     .container-halls {

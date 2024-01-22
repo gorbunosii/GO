@@ -6,6 +6,9 @@
     <title>GO</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="image/icon.png">
+    <script defer src="/script/modules/swiper-bundle.min.js"></script>
+    <script defer src="/script/modules/inputmask.min.js"></script>
+    <script defer src="/script/modules/just-validate.production.min.js"></script>
     <script type="module" src="script/script.js"></script>
 </head>
 <body>
@@ -85,22 +88,64 @@
                 </ul>
             </div>
         </section>
-        <section class="halls" id="halls">
-            <div class="container-halls">
+        <section class="halls clider">
+            <div class="container-halls slider-container">
                 <h2 class="halls__title">наши залы</h2>
-                <div>
-                    <ul class="halls__list">
-                        <li class="halls__items halls__items_80S">80’s
-                            vibes</li>
-                        <li class="halls__items halls__items_star">Star
-                            wars</li>
-                        <li class="halls__items halls__items_west">wild
-                            west</li>
-                        <li class="halls__items halls__items_neon">neon
-                            style</li>
-                    </ul>
+                <swiper-container>
+                <div class="swiper one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide"><img class="swiper-img" src="/image/slider-neon.png">
+                            <p class="swiper-text">Неоновый свет, кислотный диджей, кеды и фотолюминесценция футболки. Если вы любитель темных комнат, музыкального драйва и светящейся одежды, то вы точно знаете что сегодня надеть. </p></div>
+                        <div class="swiper-slide slide"><img class="swiper-img" src="/image/slider-star-wars.png">
+                            <p class="swiper-text">Здесь вы встретите атрибуты вселенной STAR WARS. Сможете ощутить себя на тех планетах, где разворачивается история STAR WARS и ощутить себя в роли героев наcтоящей саги.  </p></div>
+                        <div class="swiper-slide slide"><img class="swiper-img" src="/image/slider-west.png">
+                            <p class="swiper-text">Ох этот замечательный мир «Дикого Запада». Здесь вы сможете примерить на себя ковбойскую шляпу, кожаный жилет, ковбойские сапоги и даже сесть верхом на лошадь. И не важно, вы будете одним из омерзительной восьмерки или отправитесь в путь освобождать Джанго.</p></div>
+                        <div class="swiper-slide slide"><img class="swiper-img" src="/image/slider-80.png">
+                            <p class="swiper-text">Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка, кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и устройте большую вечеринку!</p></div>
                 </div>
             </div>
+        </swiper-container>
+            <p class="text-slider">Что есть в комнате?</p>
+            <swiper-container>
+            <div class="swiper two">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-two">
+                        <img class="swiper-img-two" src="/image/slider-neon-neon.png">
+                        <p class="swiper-text-two">Вы сможете встать у диджейского пульта и создать свой сет, который порадует остальных участников комнаты...или нет. 
+                            В комнате также присутствует большое предметов с элементами фосфора, включая игровые консоли, стулья и диваны. Вы точно не потеряетесь внутри.</p>
+                        </div>
+                    <div class="swiper-slide slide-two">
+                        <img class="swiper-img-two" src="/image/slider-star-wars-dop.png">
+                        <p class="swiper-text-two">В комнате STAR WARS есть игровые зоны в виде космических кораблей, командных пунктов и космических планет. 
+                            Так же вы сможете воспользоваться игровыми манипуляторами, приставками консолями или просто просмотреть любые серии саги на межпланетных экранах.</p></div>
+                    <div class="swiper-slide slide-two">
+                        <img class="swiper-img-two" src="/image/slider-west-dop.png">
+                        <p class="swiper-text-two">В комнате присутствует большое количество элементов из любимых историй дикого запада. Револьверы, кожаные вещи, шляпы, сапоги и многое другое. 
+                            Вы сможете воспользоваться динамическими игровыми платформами в виде лошадей, старинного поезда или дома в стиле вестерна. </p></div>
+                    <div class="swiper-slide slide-two">
+                        <img class="swiper-img-two" src="/image/slider-80-dop.png">
+                        <p class="swiper-text-two">ВВ комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр. 
+                            Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+                        </div>
+                </div>
+           </div>
+        </swiper-container>
+           <p class="text-slider">Другие комнаты</p>
+           <swiper-container>
+           <div class="swiper three">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-three">
+                    <img class="swiper-img-three" src="/image/slider-neon-mini.png"></div>
+                <div class="swiper-slide slide-three">
+                    <img class="swiper-img-three" src="/image/slider-star-wars-mini.png"></div>
+                <div class="swiper-slide slide-three">
+                    <img class="swiper-img-three" src="/image/slider-west-mini.png"></div>
+                <div class="swiper-slide slide-three">
+                    <img class="swiper-img-three" src="/image/slider-80-mini.png"></div>
+            </div>
+       </div>
+    </swiper-container>
+        </div>
         </section>
         <section class="take" id="take">
             <div class="container-take">
@@ -405,12 +450,12 @@
         <form class="formTell" name="calculator" action="https://jsonplaceholder.typicode.com/posts" method="post">
             <div class="specifications-form">
                 <div class="cell-form"><label for="Имяя" class="label-form">Имя</label>
-                    <input class="input-form" type="text" name="name" id="Имяя" required>
+                    <input class="input-form input-form-name" type="text" name="name" id="Имяя" required>
                 </div>
                 <div class="cell-form"><label for="Категория" class="label-form">Телефон</label>
-                    <input class="input-form" type="text" name="category" id="Категория" required>
+                    <input class="input-form input-form-tell" type="text" name="category" id="Категория" required>
                 </div>
-                <div><button class="accept-form">Позвонить мне</button></div>
+                <button type="submit" class="accept-form">Позвонить мне</button>
             </div>
         </form>
         </div>
